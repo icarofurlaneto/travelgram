@@ -1,13 +1,12 @@
 header {
   padding-block: 32px;
   font: var(--text-md);
-
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
-    align-items: center;
+  align-items: center;
 }
 #profile {
   display: flex;

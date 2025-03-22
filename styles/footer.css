@@ -2,7 +2,7 @@ footer {
     display: flex;
     padding-block: 24px;
     gap: 24px;
-    font: var(--text-md);
+    font: 14px/150% var(--font-family);
 }
 
 footer span:nth-child(1){
