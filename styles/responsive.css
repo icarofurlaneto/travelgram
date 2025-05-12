@@ -1,0 +1,204 @@
+/* Responsive styles for Travelgram */
+
+/* Base responsive image styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-inline: 16px;
+  }
+  
+  /* Header responsive styles */
+  header .container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  #profile > div {
+    max-width: 100%;
+  }
+  
+  #info {
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  /* Main responsive styles */
+  main {
+    justify-content: center;
+  }
+  
+  main img {
+    width: calc(50% - 12px);
+  }
+  
+  /* Footer responsive styles */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  footer span:nth-child(1) {
+    margin-right: 0;
+  }
+}
+
+/* Mobile Styles (480px and below) */
+@media screen and (max-width: 480px) {
+  /* Navigation responsive styles */
+  nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  nav ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  /* Main responsive styles for mobile */
+  main img {
+    width: 100%;
+  }
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: 600px) {
+  /* Add hamburger menu icon */
+  nav {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Mobile controls container for hamburger and profile pic */
+  #mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+    order: 2;
+  }
+  
+  #mobile-controls img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Fix for unwanted dot */
+  #mobile-controls li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  #hamburger-icon {
+    display: none;
+    padding: 8px;
+    z-index: 101;
+  }
+  
+  #hamburger-icon:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+  }
+  
+  #primary-menu {
+    position: relative;
+    width: auto;
+  }
+  
+  #primary-menu li:not(:last-child) {
+    display: none;
+  }
+  
+  /* Keep the profile picture visible and on the same line as hamburger icon */
+  #primary-menu li:last-child {
+    display: flex;
+    margin: 0;
+  }
+  
+  /* Mobile menu expanded state */
+  #primary-menu.show {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--surface-color);
+    width: 100%;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border-radius: 8px;
+  }
+  
+  #primary-menu.show li {
+    display: block;
+    margin: 16px 0;
+    text-align: center;
+  }
+  
+  #primary-menu.show li a {
+    display: inline-block;
+    padding: 8px 16px;
+    width: 100%;
+  }
+  
+  #primary-menu.show li:last-child {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #primary-menu li:last-child img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  /* Ensure profile picture is properly aligned in all states */
+  nav ul li:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Add this class to the body element when menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 360px) {
+  .container {
+    padding-inline: 12px;
+  }
+  
+  #profile {
+    gap: 12px;
+  }
+  
+  main {
+    gap: 16px;
+  }
+  
+  footer {
+    gap: 12px;
+    font-size: 12px;
+  }
+}

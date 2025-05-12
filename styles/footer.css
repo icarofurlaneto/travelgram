@@ -3,8 +3,21 @@ footer {
     padding-block: 24px;
     gap: 24px;
     font: 14px/150% var(--font-family);
+    flex-wrap: wrap;
 }
 
 footer span:nth-child(1){
     margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        justify-content: center;
+    }
+    
+    footer span:nth-child(1) {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
 }

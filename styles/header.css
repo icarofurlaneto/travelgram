@@ -12,10 +12,18 @@ header .container {
   display: flex;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 #profile > div {
   max-width: 348px;
+  flex: 1;
+  min-width: 250px;
+}
+
+#profile img {
+  max-width: 100%;
+  height: auto;
 }
 
 #profile h1 {
@@ -26,12 +34,24 @@ header .container {
 
 #info {
   list-style: none;
-
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   width: 280px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #info {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #info li {
+    margin-inline: 8px;
+  }
 }
 
 #info li {

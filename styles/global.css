@@ -20,6 +20,22 @@
   --text-sm: 12px/170% var(--font-family);
 }
 
+/* Responsive font sizes */
+@media screen and (max-width: 768px) {
+  :root {
+    --text-lg: bold 28px/125% var(--font-family);
+    --text: 15px/1.5rem var(--font-family);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --text-lg: bold 24px/125% var(--font-family);
+    --text: 14px/1.5rem var(--font-family);
+    --text-md: 13px/170% var(--font-family);
+  }
+}
+
 body {
   font: var(--text);
   color: var(--text-color-secondary);
@@ -38,6 +54,7 @@ a:hover {
 
 .container {
   padding-inline: 32px;
+  width: 100%;
   max-width: 1920px;
   margin-inline: auto;
 }
