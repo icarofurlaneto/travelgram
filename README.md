@@ -34,7 +34,7 @@ Edit
 cd travelgram
 Abra o arquivo index.html no seu navegador.
 
-🧠 Aprendizados
+## 🧠 Aprendizados
 Durante o desenvolvimento do Travelgram, foram praticados conceitos como:
 
 Design responsivo
@@ -45,7 +45,8 @@ Manipulação do DOM com JavaScript
 
 Estruturação semântica de HTML
 
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
 
 Feito com ❤️ por Ícaro Furlaneto
