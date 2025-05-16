@@ -1,6 +1,6 @@
 # 🌍 Travelgram
 
-![Screenshot 2025-05-16 104022](https://github.com/user-attachments/assets/9d0a31f3-1d45-429d-9647-b3a20eb6b93d)
+![Screenshot 2025-05-16 111731](https://github.com/user-attachments/assets/1c0202f1-5ea5-414d-b159-efa9d4c754f9)
 
 Uma aplicação web inspirada em redes sociais de fotos, como o Instagram, com foco em destinos de viagem. O projeto foi desenvolvido com HTML, CSS e JavaScript puros, e tem como objetivo treinar habilidades de front-end e design responsivo.
 
